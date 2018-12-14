@@ -36,6 +36,7 @@
 {% if SerializeTypeInformation -%}
             settings.TypeNameHandling = Newtonsoft.Json.TypeNameHandling.Auto;
 {% endif -%}
+            settings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Unspecified;
             UpdateJsonSerializerSettings(settings);
             return settings;
         });
